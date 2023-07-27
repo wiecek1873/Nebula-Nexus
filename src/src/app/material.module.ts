@@ -97,3 +97,5 @@ const AllMaterialModules = [
     exports: [AllMaterialModules],
 })
 export class MaterialModule { }
+
+export { MatButtonModule };
