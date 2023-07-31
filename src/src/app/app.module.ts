@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { SignUpPageComponent } from './pages/sign-up-page/sign-up-page.component';
+import { ServerStatusComponent } from './components/server-status/server-status.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SignUpPageComponent
+    SignUpPageComponent,
+    ServerStatusComponent
   ],
   imports: [
     BrowserModule,
