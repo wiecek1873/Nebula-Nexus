@@ -1,23 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RouterModule } from '@angular/router';
-import { SignUpPageComponent } from './pages/sign-up-page/sign-up-page.component';
-import { ServerStatusComponent } from './components/server-status/server-status.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    SignUpPageComponent,
-    ServerStatusComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([
-      { path: 'sign-up', component: SignUpPageComponent },
-      { path: '**', redirectTo: 'sign-up' }
-    ]),
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
